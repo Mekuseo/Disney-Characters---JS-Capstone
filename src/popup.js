@@ -1,20 +1,28 @@
 import { getData } from "./api";
+import {createCard} from './index.js'
 const startPosition =document.querySelector('#body');
+
 const popup = async () =>{
     const apiData = await getData();
+    const commentBtn = await createCard();
     let display ="";
-    apiData.forEach(e => {
+    commentBtn.forEach((e) => {
+        const dataID = e.getAttribute('data-id'); 
+        console.log(dataID)
+        e.addEventListener('click', async()=>{
+            console.log(dataID)
+        
         display +=`<section class="container">
         <div class="box1">
         <img class="char__img" src="https://tinypng.com/images/social/website.jpg" alt="character-image"/>
-        <h3 class="char__name">${e.name}</h3>
+        <h3 class="char__name">${apiData[dataID].name}</h3>
         <ul class="facts">
-        <li class="fact">Films: ${e.films.length}</li>
-        <li class="fact">Short Films: ${e.shortFilms.length}</li>
+        <li class="fact">Films: ${apiData[dataID].films.length}</li>
+        <li class="fact">Short Films: ${apiData[dataID].shortFilms.length}</li>
         </ul>
         <ul class="facts">
-        <li class="fact">Tv Shows: ${e.tvShows.length}</li>
-        <li class="fact">Allies: ${e.allies.length}</li>
+        <li class="fact">Tv Shows: ${apiData[dataID].tvShows.length}</li>
+        <li class="fact">Allies: ${apiData[dataID].allies.length}</li>
         </ul>
         </div>
         <div class="box2">
@@ -38,9 +46,10 @@ const popup = async () =>{
         </div>
         </div>
         </section>`;
-    });
+    
     startPosition.insertAdjacentHTML("afterbegin",display)
-
+});
+});
 }
 
 export {popup};
