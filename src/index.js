@@ -21,7 +21,7 @@ const createCard = async (character) => {
         <h2>${image.name}</h2>
         <i class="fa-solid fa-heart"></i>
       </div>
-      <p>5 Likes</p>
+      <p class='likes-count'>5 Likes</p>
       <button>Comments</button>
       <button>Reservations</button>
       `
