@@ -5,7 +5,7 @@ const apiDisplay = document.querySelector('.api-display');
 
 const createCard = async (character) => {
   const images = await getData();
-  images.forEach((image) => {
+  images.forEach((image, index) => {
     const card = document.createElement('div');
     card.classList.add('card');
     card.innerHTML = `
@@ -16,7 +16,7 @@ const createCard = async (character) => {
       </div>
       <p class='likes-count'>5 Likes</p>
       <button>Comments</button>
-      <button>Reservations</button>
+      <button id="${index}">Reservations</button>
       `
     apiDisplay.appendChild(card);
   })
