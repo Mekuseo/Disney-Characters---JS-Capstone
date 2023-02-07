@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-  <title>Disney</title>
-</head>
-<body id="body">
-  <section class="container">
+const startPosition =document.querySelector('#body')
+const popup = async () =>{
+    insertAdjacentHTML(startPosition,`<section class="container">
     <div class="box1">
     <img class="char__img" src="https://tinypng.com/images/social/website.jpg" alt="character-image"/>
     <h3 class="char__name">Name</h3>
@@ -43,6 +33,7 @@
       </form>
     </div>
     </div>
-    </section>
-</body>
-</html>
+    </section>`)
+}
+
+export {popup};
