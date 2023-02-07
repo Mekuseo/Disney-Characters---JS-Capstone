@@ -1,17 +1,10 @@
-// import './style.css';
+import "./style.css"
+import {popup} from './popup.js';
+import {getData} from './api';
 const apiDisplay = document.querySelector('.api-display');
-
-const getData = async () => {
-  const response = await fetch('https://api.disneyapi.dev/characters');
-  const data = await response.json();
-  return data.data;
-}
-
-getData();
 
 const createCard = async (character) => {
   const images = await getData();
-  console.log(images)
   images.forEach((image) => {
     const card = document.createElement('div');
     card.classList.add('card');
@@ -30,3 +23,4 @@ const createCard = async (character) => {
 }
 
 createCard();
+popup();
