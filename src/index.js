@@ -1,9 +1,10 @@
-import "./style.css"
-import {popup} from './popup.js';
-import {getData} from './api';
+import './style.css';
+// import { popup } from './popup.js';
+import { getData } from './api.js';
+
 const apiDisplay = document.querySelector('.api-display');
 
-const createCard = async (character) => {
+const createCard = async () => {
   const images = await getData();
   images.forEach((image, index) => {
     const card = document.createElement('div');
@@ -17,10 +18,10 @@ const createCard = async (character) => {
       <p class='likes-count'>5 Likes</p>
       <button>Comments</button>
       <button id="${index}">Reservations</button>
-      `
+      `;
     apiDisplay.appendChild(card);
-  })
-}
+  });
+};
 
 createCard();
-popup();
+// popup();

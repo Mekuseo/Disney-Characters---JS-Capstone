@@ -1,10 +1,11 @@
-import { getData } from "./api";
-const startPosition =document.querySelector('#body');
-const popup = async () =>{
-    const apiData = await getData();
-    let display ="";
-    apiData.forEach(e => {
-        display +=`<section class="container">
+import { getData } from './api.js';
+
+const startPosition = document.querySelector('#body');
+const popup = async () => {
+  const apiData = await getData();
+  let display = '';
+  apiData.forEach((e) => {
+    display += `<section class="container">
         <div class="box1">
         <img class="char__img" src="https://tinypng.com/images/social/website.jpg" alt="character-image"/>
         <h3 class="char__name">${e.name}</h3>
@@ -38,9 +39,9 @@ const popup = async () =>{
         </div>
         </div>
         </section>`;
-    });
-    startPosition.insertAdjacentHTML("afterbegin",display)
+  });
+  startPosition.insertAdjacentHTML('afterbegin', display);
+};
 
-}
-
-export {popup};
+// eslint-disable-next-line import/prefer-default-export
+export { popup };

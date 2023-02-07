@@ -28,11 +28,21 @@ margin: 1rem;}
   font-weight: bold;
   font-size: 2.5rem;
 }
+
 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem 2rem;
   background-color: #212121;
   color: #fff;
-  margin-bottom: 2rem;
+}
+
+.fa-bars {
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+  display: none;
 }
 
 .box1{
@@ -71,14 +81,14 @@ nav {
   margin-right: 1rem;
 }
 
-
-
 .form{
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
+
 .api-display {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 2rem;
@@ -89,6 +99,7 @@ nav {
   justify-content: space-evenly;
   gap: 3rem;
 }
+
 .card {
   width: 30%;
   background-color: #fff;
@@ -107,6 +118,7 @@ nav {
 .image-name {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 1rem;
 }
 
@@ -117,7 +129,7 @@ nav {
 
 .likes-count {
   text-align: right;
-  margin-bottom: 2rem;
+  margin: -2rem 0 2rem;
 }
 
 .image-name i {
@@ -132,11 +144,58 @@ button {
   padding: 0.5rem 1rem;
   margin-right: 0.5rem;
   cursor: pointer;
+  margin: 0 3rem 3rem 3rem;
 }
 
 @media only screen and (max-width: 720px) {
+  nav > * {
+    padding: 0 2rem;
+    font-size: 2.5rem;
+  }
+
+  .menu {
+    display: none
+  }
+
   .card {
     width: 100%;
+    padding: 0 3rem;
+  }
+
+  .image-name {
+    align-items: center;
+  }
+
+  .image-name h2 {
+    font-size: 40px;
+  }
+
+  .image-name i {
+    font-size: 40px;
+  }
+
+  .likes-count {
+    font-size: 2rem;
+    margin: -4rem 0 7rem 0;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .image-name h2 {
+    font-size: 20px;
+  }
+
+  .image-name i {
+    font-size: 20px;
+  }
+
+  .likes-count {
+    font-size: 1.5rem;
+    margin: -3rem 0 5rem 0;
   }
 }
 
