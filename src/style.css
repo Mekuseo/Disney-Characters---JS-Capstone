@@ -73,8 +73,6 @@ nav {
 .comments__box{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .menu li {
   list-style: none;
@@ -158,6 +156,12 @@ button {
   gap: 2rem;
   font-size: 1.8rem;
   color: gold;
+  margin: 1rem;
+}
+
+.counter{
+  font-size: 2rem;
+  margin: 1rem;
 }
 
 @media only screen and (max-width: 720px) {
