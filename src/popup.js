@@ -7,7 +7,8 @@ const popup = async () =>{
     let display ="";
     commentBtn.forEach((e) => {
         const dataID = e.getAttribute('data-id'); 
-        e.addEventListener('click', async()=>{        
+        e.addEventListener('click', async()=>{   
+
         display =`<section class="container">
         <div class="box1">
         <i class="fa-regular fa-circle-xmark cross"></i> 
@@ -25,11 +26,6 @@ const popup = async () =>{
         <div>
           <h3 class="comment__title">Comments</h3>
           <ul class="comments__box">
-            <li>comment</li>
-            <li>comment</li>
-            <li>comment</li>
-            <li>comment</li>
-            <li>comment</li>
           </ul>
         </div>
         <div>
@@ -42,7 +38,7 @@ const popup = async () =>{
         </div>
         </div>
         </section>`;
-    
+    const commentBox = document.querySelector('.comments__box')
     startPosition.insertAdjacentHTML("afterbegin",display)
     const popupSection = document.querySelector('.container') ;
     const cross = document.querySelectorAll('.cross')

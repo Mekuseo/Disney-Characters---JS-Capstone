@@ -1,6 +1,6 @@
 import "./style.css"
 import {popup} from './popup.js';
-import {getData, postData} from './api.js';
+import {getData} from './api.js';
 const apiDisplay = document.querySelector('.api-display');
 
 const createCard = async (character) => {
