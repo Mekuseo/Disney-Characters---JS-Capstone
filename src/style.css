@@ -7,7 +7,13 @@ body {
 }
 
 .container {
-  background-color: rgb(0, 0, 0, 20%);
+  background-color: rgb(0, 0, 0, .6);
+  backdrop-filter: blur(8px);
+  position: fixed;
+  overflow: auto;
+  max-height: 100vh;
+  color: white;
+  z-index: 67;
 }
 
 .char__img {
@@ -121,6 +127,7 @@ nav {
   text-align: center;
   margin-bottom: 2rem;
   padding: 1rem;
+  transition: all 0.2s ease-in-out;
 }
 
 .card img {

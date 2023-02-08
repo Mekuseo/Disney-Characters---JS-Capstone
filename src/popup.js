@@ -1,21 +1,24 @@
-import { getData } from './api.js';
-
-const startPosition = document.querySelector('#body');
-const popup = async () => {
-  const apiData = await getData();
-  let display = '';
-  apiData.forEach((e) => {
-    display += `<section class="container">
+import { getData } from "./api";
+import {createCard} from './index.js'
+const startPosition =document.querySelector('#body');
+const popup = async () =>{
+    const apiData = await getData();
+    const commentBtn = await createCard();
+    let display ="";
+    commentBtn.forEach((e) => {
+        const dataID = e.getAttribute('data-id'); 
+        e.addEventListener('click', async()=>{        
+        display =`<section class="container">
         <div class="box1">
-        <img class="char__img" src="https://tinypng.com/images/social/website.jpg" alt="character-image"/>
-        <h3 class="char__name">${e.name}</h3>
+        <i class="fa-regular fa-circle-xmark cross"></i> 
+        <img class="char__img" src="${apiData[dataID].imageUrl}"/>
         <ul class="facts">
-        <li class="fact">Films: ${e.films.length}</li>
-        <li class="fact">Short Films: ${e.shortFilms.length}</li>
+        <li class="fact">Films: ${apiData[dataID].films.length}</li>
+        <li class="fact">Short Films: ${apiData[dataID].shortFilms.length}</li>
         </ul>
         <ul class="facts">
-        <li class="fact">Tv Shows: ${e.tvShows.length}</li>
-        <li class="fact">Allies: ${e.allies.length}</li>
+        <li class="fact">Tv Shows: ${apiData[dataID].tvShows.length}</li>
+        <li class="fact">Allies: ${apiData[dataID].allies.length}</li>
         </ul>
         </div>
         <div class="box2">
@@ -39,9 +42,17 @@ const popup = async () => {
         </div>
         </div>
         </section>`;
-  });
-  startPosition.insertAdjacentHTML('afterbegin', display);
-};
+    
+    startPosition.insertAdjacentHTML("afterbegin",display)
+    const popupSection = document.querySelector('.container') ;
+    const cross = document.querySelectorAll('.cross')
+    cross.forEach((e) =>
+    e.addEventListener('click', () =>{
+        popupSection.classList.add('hide-container');
+      })
+    )
+});
+});
+}
 
-// eslint-disable-next-line import/prefer-default-export
-export { popup };
+export {popup};
