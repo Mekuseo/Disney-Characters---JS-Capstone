@@ -1,21 +1,17 @@
 import { getData } from "./api";
 import {createCard} from './index.js'
 const startPosition =document.querySelector('#body');
-
 const popup = async () =>{
     const apiData = await getData();
     const commentBtn = await createCard();
     let display ="";
     commentBtn.forEach((e) => {
         const dataID = e.getAttribute('data-id'); 
-        console.log(dataID)
-        e.addEventListener('click', async()=>{
-            console.log(dataID)
-        
-        display +=`<section class="container">
+        e.addEventListener('click', async()=>{        
+        display =`<section class="container">
         <div class="box1">
-        <img class="char__img" src="https://tinypng.com/images/social/website.jpg" alt="character-image"/>
-        <h3 class="char__name">${apiData[dataID].name}</h3>
+        <i class="fa-regular fa-circle-xmark cross"></i> 
+        <img class="char__img" src="${apiData[dataID].imageUrl}"/>
         <ul class="facts">
         <li class="fact">Films: ${apiData[dataID].films.length}</li>
         <li class="fact">Short Films: ${apiData[dataID].shortFilms.length}</li>
@@ -48,6 +44,13 @@ const popup = async () =>{
         </section>`;
     
     startPosition.insertAdjacentHTML("afterbegin",display)
+    const popupSection = document.querySelector('.container') ;
+    const cross = document.querySelectorAll('.cross')
+    cross.forEach((e) =>
+    e.addEventListener('click', () =>{
+        popupSection.classList.add('hide-container');
+      })
+    )
 });
 });
 }

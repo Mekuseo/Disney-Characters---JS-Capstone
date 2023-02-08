@@ -7,11 +7,22 @@ body{
 }
 
 .container{
-  background-color: rgb(0, 0, 0, 20%);
+  background-color: rgb(0, 0, 0, .6);
+  backdrop-filter: blur(8px);
+  position: fixed;
+  overflow: auto;
+  max-height: 100vh;
+  color: white;
+  z-index: 67;
+}
+
+.hide-container{
+  display: none;
 }
 
 .char__img{
   width: 40rem;
+  height: 40rem;
 }
 
 ul{
@@ -41,6 +52,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .comment__title{
@@ -132,6 +144,13 @@ button {
   padding: 0.5rem 1rem;
   margin-right: 0.5rem;
   cursor: pointer;
+}
+
+.cross{
+  font-size: 3rem;
+  position: fixed;
+  top: 5px;
+  right: 5px;
 }
 
 @media only screen and (max-width: 720px) {
