@@ -22,8 +22,6 @@ const createCard = async (character) => {
   })
   return document.querySelectorAll('.btn');
 }
-
 createCard();
 popup();
-
 export {createCard}
