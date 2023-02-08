@@ -1,6 +1,6 @@
 import "./style.css"
 import {popup} from './popup.js';
-import {getData} from './api.js';
+import {getData, postData} from './api.js';
 const apiDisplay = document.querySelector('.api-display');
 
 const createCard = async (character) => {
@@ -22,8 +22,6 @@ const createCard = async (character) => {
   })
   return document.querySelectorAll('.btn');
 }
-
 createCard();
 popup();
-
 export {createCard}
