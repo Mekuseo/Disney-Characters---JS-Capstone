@@ -1,8 +1,8 @@
-html{
+html {
   font-size: 62.5%;
 }
 
-body{
+body {
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -20,22 +20,33 @@ body{
   display: none;
 }
 
-.char__img{
+.container {
+  background-color: rgb(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  position: fixed;
+  overflow: auto;
+  max-height: 100vh;
+  color: white;
+  z-index: 67;
+}
+
+.char__img {
   width: 40rem;
   height: 40rem;
 }
 
-ul{
+ul {
   list-style: none;
   font-size: 1.5rem;
-margin: 1rem;}
+  margin: 1rem;
+}
 
-.facts{
+.facts {
   display: flex;
   gap: 5rem;
 }
 
-.char__name{
+.char__name {
   font-weight: bold;
   font-size: 2.5rem;
 }
@@ -56,22 +67,28 @@ nav {
   display: none;
 }
 
-.box1{
+.box1 {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-.comment__title{
+.comment__title {
   font-size: 2rem;
 }
 
 .logo {
   color: #fff;
   margin-right: 1rem;
+  font-size: 2.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.logo:hover {
+  color: gold;
+  border-radius: 5px;
 }
 
 .menu {
@@ -80,18 +97,25 @@ nav {
   width: 50%;
 }
 
-.comments__box{
+.comments__box {
   display: flex;
   flex-direction: column;
 }
+
 .menu li {
   list-style: none;
   cursor: pointer;
   color: #fff;
   margin-right: 1rem;
+  transition: all 0.2s ease-in-out;
 }
 
-.form{
+.menu li:hover {
+  color: gold;
+  border-radius: 5px;
+}
+
+.form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -104,7 +128,7 @@ nav {
   padding: 2rem;
 }
 
-.box2{
+.box2 {
   display: flex;
   justify-content: space-evenly;
   gap: 3rem;
@@ -113,10 +137,11 @@ nav {
 .card {
   width: 30%;
   background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   text-align: center;
   margin-bottom: 2rem;
   padding: 1rem;
+  transition: all 0.2s ease-in-out;
 }
 
 .card img {
@@ -144,7 +169,11 @@ nav {
 
 .image-name i {
   font-size: 1.5rem;
-  color: #ff0000;
+  cursor: pointer;
+}
+
+.active {
+  color: red;
 }
 
 button {
@@ -152,7 +181,6 @@ button {
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
-  margin-right: 0.5rem;
   cursor: pointer;
   margin: 0 3rem 3rem 3rem;
 }
@@ -184,7 +212,7 @@ button {
   }
 
   .menu {
-    display: none
+    display: none;
   }
 
   .card {
@@ -228,4 +256,3 @@ button {
     margin: -3rem 0 5rem 0;
   }
 }
-
