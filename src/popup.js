@@ -1,14 +1,15 @@
-import { getData } from "./api";
-import {createCard} from './index.js'
-const startPosition =document.querySelector('#body');
-const popup = async () =>{
-    const apiData = await getData();
-    const commentBtn = await createCard();
-    let display ="";
-    commentBtn.forEach((e) => {
-        const dataID = e.getAttribute('data-id'); 
-        e.addEventListener('click', async()=>{        
-        display =`<section class="container">
+import { getData } from './api';
+import { createCard } from './index.js';
+
+const startPosition = document.querySelector('#body');
+const popup = async () => {
+  const apiData = await getData();
+  const commentBtn = await createCard();
+  let display = '';
+  commentBtn.forEach((e) => {
+    const dataID = e.getAttribute('data-id');
+    e.addEventListener('click', async () => {
+      display = `<section class="container">
         <div class="box1">
         <i class="fa-regular fa-circle-xmark cross"></i> 
         <img class="char__img" src="${apiData[dataID].imageUrl}"/>
@@ -42,17 +43,15 @@ const popup = async () =>{
         </div>
         </div>
         </section>`;
-    
-    startPosition.insertAdjacentHTML("afterbegin",display)
-    const popupSection = document.querySelector('.container') ;
-    const cross = document.querySelectorAll('.cross')
-    cross.forEach((e) =>
-    e.addEventListener('click', () =>{
-        popupSection.classList.add('hide-container');
-      })
-    )
-});
-});
-}
 
-export {popup};
+      startPosition.insertAdjacentHTML('afterbegin', display);
+      const popupSection = document.querySelector('.container');
+      const cross = document.querySelectorAll('.cross');
+      cross.forEach((e) => e.addEventListener('click', () => {
+        popupSection.classList.add('hide-container');
+      }));
+    });
+  });
+};
+
+export { popup };
