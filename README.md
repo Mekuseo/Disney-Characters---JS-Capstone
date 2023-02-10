@@ -73,6 +73,8 @@ This app was done by Ghulam-Subbhani and I."
 
 To see the demo version, you can <a href="https://mekuseo.github.io/Disney-Characters---JS-Capstone/dist"> Click here </a>
 
+To watch Video Presentation, you can <a href="https://drive.google.com/file/d/1bc1TwqB0Q2nyHEdKc3qtbzYpCVarTlJV/view?usp=sharing"> Click here </a>
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
