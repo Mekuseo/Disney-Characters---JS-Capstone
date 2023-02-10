@@ -9,4 +9,4 @@ const getClicks = async () => {
   return data;
 };
 
-export { getData, getClicks};
+export { getData, getClicks };

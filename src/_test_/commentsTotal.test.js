@@ -7,6 +7,12 @@ describe('Check comments count', () => {
     expect(total).toEqual(2);
   });
 
+  test('Total Comments for this item', async () => {
+    const item = await counter(10);
+    const total = item.length;
+    expect(total).toEqual(3);
+  });
+
   test('test2', async () => {
     const item = await counter(30);
     const total = item.length;
