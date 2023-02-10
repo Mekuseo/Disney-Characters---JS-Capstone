@@ -1,4 +1,5 @@
 import './style.css';
+// eslint-disable-next-line import/no-cycle, import/named
 import { popup } from './popup.js';
 import { getData, getClicks } from './api.js';
 

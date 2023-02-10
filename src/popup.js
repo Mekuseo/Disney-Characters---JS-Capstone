@@ -1,17 +1,19 @@
-import { getData } from "./api";
-import { createCard } from "./index.js";
-const startPosition = document.querySelector("#body");
+import { getData } from './api.js';
+// eslint-disable-next-line import/no-cycle
+import { createCard } from './index.js';
+
+const startPosition = document.querySelector('#body');
 const popup = async () => {
   const apiData = await getData();
   const commentBtn = await createCard();
-  let display = "";
+  let display = '';
   commentBtn.forEach((e) => {
-    const dataId = e.getAttribute("data-id");
-    e.addEventListener("click", async () => {
-      let response = await fetch(
-        `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/UfLyVv1lq0qsaVGik4HQ/comments?item_id=item${dataId}`
+    const dataId = e.getAttribute('data-id');
+    e.addEventListener('click', async () => {
+      const response = await fetch(
+        `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/UfLyVv1lq0qsaVGik4HQ/comments?item_id=item${dataId}`,
       );
-      let commentData = await response.json();
+      const commentData = await response.json();
       display = `<section class="container">
         <div class="box1">
         <i class="fa-regular fa-circle-xmark cross"></i> 
@@ -41,48 +43,47 @@ const popup = async () => {
         </div>
         </div>
         </section>`;
-      startPosition.insertAdjacentHTML("afterbegin", display);
-      const commentBox = document.querySelector("#box");
-      const counter = document.querySelector(".counter");
+      startPosition.insertAdjacentHTML('afterbegin', display);
+      const commentBox = document.querySelector('#box');
+      const counter = document.querySelector('.counter');
       commentData.forEach((e) => {
-        counter.innerHTML=`${commentData.length}`;
+        counter.innerHTML = `${commentData.length}`;
         commentBox.innerHTML += `<li class="comment__list"><span>${e.creation_date}</span><span>${e.username}</span> <span>${e.comment}</span></li>
         `;
       });
-      const form = document.querySelector(".form");
-      form.addEventListener("submit", async (e) => {
+      const form = document.querySelector('.form');
+      form.addEventListener('submit', async (e) => {
         const UserName = form.elements[0].value;
         const UserComment = form.elements[1].value;
         e.preventDefault();
         await fetch(
-          "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/UfLyVv1lq0qsaVGik4HQ/comments",{
-            method: "POST",
+          'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/UfLyVv1lq0qsaVGik4HQ/comments', {
+            method: 'POST',
             body: JSON.stringify({
-                item_id: `item${dataId}`,
-                username: UserName,
-                comment: UserComment,
-              }),
+              item_id: `item${dataId}`,
+              username: UserName,
+              comment: UserComment,
+            }),
             headers: {
-              "Content-type": "application/json; charset=UTF-8",
+              'Content-type': 'application/json; charset=UTF-8',
             },
-          });
-      commentBox.innerHTML="";
-      commentData.forEach((e) => {
-        counter.innerHTML=`${commentData.length}`;
-        commentBox.innerHTML += `<li class="comment__list"><span>${e.creation_date}</span><span>${e.username}</span> <span>${e.comment}</span></li>
+          },
+        );
+        commentBox.innerHTML = '';
+        commentData.forEach((e) => {
+          counter.innerHTML = `${commentData.length}`;
+          commentBox.innerHTML += `<li class="comment__list"><span>${e.creation_date}</span><span>${e.username}</span> <span>${e.comment}</span></li>
         `;
+        });
+        form.reset();
       });
-      form.reset();
-    });
-      const popupSection = document.querySelector(".container");
-      const cross = document.querySelectorAll(".cross");
-      cross.forEach((e) =>
-        e.addEventListener("click", () => {
-          popupSection.classList.add("hide-container");
-        })
-      );
+      const popupSection = document.querySelector('.container');
+      const cross = document.querySelectorAll('.cross');
+      cross.forEach((e) => e.addEventListener('click', () => {
+        popupSection.classList.add('hide-container');
+      }));
     });
   });
 };
 
-export { popup };
+export default { popup };
