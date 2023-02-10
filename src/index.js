@@ -40,10 +40,16 @@ const createCard = async () => {
           },
         },
       );
+
+      // Make another API call to get the updated likes count
+      const updatedClicks = await getClicks();
+      clicks[e.getAttribute('data-id')].likes = updatedClicks[e.getAttribute('data-id')].likes;
+
       const updatedLikeCount = document.querySelectorAll('.likes-count');
       updatedLikeCount[e.getAttribute('data-id')].innerHTML = `${clicks[e.getAttribute('data-id')].likes} Likes`;
     });
   });
+
   return document.querySelectorAll('.btn');
 };
 
