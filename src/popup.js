@@ -86,4 +86,5 @@ const popup = async () => {
   });
 };
 
+// eslint-disable-next-line import/prefer-default-export
 export { popup };
