@@ -1,36 +1,11 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+# Disney Characters App <a name="about-project"></a>
+
+![All-Device-Image](https://lh3.googleusercontent.com/c859PNUOVi0073mK5rq2FK--u5wHzHhnpaUgzDFheLkASLk8pDkXOi_BXoIfeLXLALABW98R9Muy-Rb_T8crfFAteRISiL2zJ0Nr98f2x-HOgaZENeWwN_eZA9yWC4grisQouJqScak8QDAC4Y1kSpC0lk-WbaTv8QHvtofc8u9NIm5U1hKx0Pbi-gQ8wZmo9Ot99VUzqk0qtSVfm3gnWjVk4NHGV0gM7QiNYv3UD5W25yolHNPrBor3KehV7uoqNbnxGWA3F6iQeES9zBK7LmtQFwDGkUtr_pCfJa9X9l_oTH1jZIjX14ngPluARNsKAoGEjyzeJk201R-eW0Tc6qHrUJ-iGMeDrdmVm0fRa9b5ZWv22AiWOBATH7ZZl9gZazfhuQaBjTAuQHtFSAbifdL-vQSujJnuUEwq6ijTcVy4TtOVsrFTvBu87jKN_ldtjStsN9myD4EHIKU44j9XXXXDDHHg7j8jt35DUWTkOpsuOKHpCyrY96INHpMGowc3_E8SCzV6m4YdLWYaDwT3Ylu67Pym3UYBGAQBmXFL4rZWr3EAKH7LRtRo7C1dwkpDaPgLKIkr7hqmMoz8bSe8DCpS15Cs7To93ph29AHv1kCoDDCL5Wsxd8q-NXsYkzhCBAOSt9zLCTP2h5qs5UZjBz0RvFbp-1c6QMEZJQVOmE6YaPZrvDajaEw-uoR8yJVV1FfxcAb-OeFofcaC7kvK1ok8sxvLYN1Kg7O_6ysV0pvyecH8xz2skvhQ34XVwxD3cjEh5j94YjFjqb4-XpsW0GWNVbtRM-2eWnpI0KImnfQBlq9qEijxxam1UN6-DkxksTV_48d3i0H_8MsumszsUH5jqN6UYzNkfHnxlIR_yYqZoC_FihRM_Pfr97QxixuFGoeBRKsGdjwtZNBFClOO8Dhhi9Ng_zfq8-VHHEh9xlgqyprzANPgh5BAiMTqRH37TImgzphCbQNkTMglFYKm=w1026-h592-no?authuser=0)
+
 
 </div>
 
@@ -38,8 +13,9 @@ After you're finished please remove all the comments and instructions!
 
 # 📗 Table of Contents
 
-- [� Table of Contents](#-table-of-contents)
-- [📖 \[your\_project\_name\] ](#-your_project_name-)
+- [Disney Characters App ](#disney-characters-app-)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Disney Characters ](#-disney-characters-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -49,154 +25,126 @@ After you're finished please remove all the comments and instructions!
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
-    - [Run tests](#run-tests)
-    - [Deployment](#deployment)
+    - [Run tests ](#run-tests-)
+    - [Deployment ](#deployment-)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
-  - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [❓ FAQ (OPTIONAL) ](#-faq-optional-)
+  - [⭐️ Show your support ](#️-show-your-support-)
   - [📝 License ](#-license-)
+
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 Disney Characters <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
+"Discover the magic of Disney with our Character Display App! Explore a vast collection of beloved Disney characters and relive your childhood memories. The app fetches images from a trusted API, providing you with high-quality images of your favorite characters. Whether you're a fan of classic Disney movies or modern Disney-Pixar films, this app is perfect for all ages. Download now and immerse yourself in the enchanting world of Disney!
+This app was done by Ghulam-Subbhani and I."
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+<a href="https://www.w3.org/html/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="55" height="55"/></a><a href="https://www.w3schools.com/css/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="55" height="55"/></a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img align="center" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="55" height="55"/></a>
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
 
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- [ ] **[Receiving Images from API https://api.disneyapi.dev/characters and render them in our app]**
+- [ ] **[Pop up window when you press button "Comments" ]**
+- [ ] **[Pop up window that renders all the info of the characters and the comments and a form to add your comment!]**
+- [ ] **[Sending the comments to the API: https://us-central1-involvement-api.cloudfunctions.net/ to be able to display them in the modal]**
+- [ ] **[Add likes when you press the heart like button]**
+- [ ] **[Likes are sent to the API https://us-central1-involvement-api.cloudfunctions.net/, and then we receive them in our counter likes]**
+- [ ]  **[Counter of the items displayed at the top of the home page]**
+- [ ]   **[Counter of items function tested with jest]**
+- [ ]    **[Counter of the comments in each modal]**
+- [ ]    **[Counter of comments function tested with jest]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+To see the demo version, you can <a href="https://mekuseo.github.io/Disney-Characters---JS-Capstone/dist"> Click here </a>
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+To watch Video Presentation, you can <a href="https://drive.google.com/file/d/1bc1TwqB0Q2nyHEdKc3qtbzYpCVarTlJV/view?usp=sharing"> Click here </a>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+To watch Video Presentation, you can <a href="https://clipchamp.com/watch/vVbyFspjnL6"> Click here </a>
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
+
 
 ### Prerequisites
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+- [ ] A PC running any operating system like Windows, Linux, or MacOS
+- [ ] An Internet connection
+- [ ] Git installed
+- [ ] Webpack installed
+- [ ] Knowledge of some basic Git commands
 
 ### Setup
 
-Clone this repository to your desired folder:
-
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+1. Download the **Zip** file or clone the repo with:
+```bash
+git clone https://github.com/Mekuseo/Disney-Characters---JS-Capstone.git
 ```
---->
+2. To access cloned directory run:
+```bash
+cd JS.capstone-project
+```
+3. Open it with the live server
 
 ### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
 ```
---->
+npm install
+```
 
 ### Usage
 
-To run the project, execute the following command:
+Start the server
 
-<!--
-Example command:
-
-```sh
-  rails server
 ```
---->
+npm run start
+```
 
-### Run tests
+### Run tests <a name="run-tests"></a>
 
 To run tests, run the following command:
 
-<!--
-Example command:
+npm test
 
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
+To run Stylelint and ESLint tests, run the following commands respectively:
 
 ```
- -->
+npx stylelint "**/*.{css,scss}"
+```
+
+```
+npx eslint .
+```
+
+### Deployment <a name="deployment"></a>
+
+To deploy this project run
+
+```
+npm run deploy
+```
+
+- GitHub Pages was used to deploy this website
+- For more information about publishing sources, see "[About github page](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites)"
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -204,20 +152,18 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Kanu Chukwuemeka**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Mekuseo](https://github.com/Mekuseo)
+- Twitter: [@fullstack_pison](https://twitter.com/fullstack_pison)
+- LinkedIn: [@chukwuemekakanu](https://www.linkedin.com/in/chukwuemekakanu)
 
-👤 **Ghulam Subbhani(Malik)**
+👤 **Ghulam Subbhani**
 
 - GitHub: [@githubhandle](https://github.com/gsmalik030)
 - Twitter: [@twitterhandle](https://twitter.com/gsmalik030)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ghulam-subbhani-4b1281252/)
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -225,57 +171,34 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+- [ ] **Improve design**
+- [ ] **Making the navbar work with more sections**
+- [ ] **Display more photos and the option to pass to the next pages.**
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+To open Issue, you can <a href="https://github.com/Mekuseo/Disney-Characters---JS-Capstone/issues"> Click here </a>
 
-Feel free to check the [issues page](../../issues/).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- SUPPORT -->
-
-## ⭐️ Show your support <a name="support"></a>
-
-> Write a message to encourage readers to support your project
-
-If you like this project...
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank - [ Microverse]
+ **![](https://img.shields.io/badge/Microverse-blueviolet)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
+<!-- SUPPORT -->
+## ⭐️ Show your support <a name="support"></a>
 
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+<!-- > Write a message to encourage readers to support your project -->
+HAppy to have you here! If you like this project please Give us a ⭐️ !
+Thank you so much!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -283,7 +206,7 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/Mekuseo/Disney-Characters---JS-Capstone/blob/dev/MIT.md) licensed.
 
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
