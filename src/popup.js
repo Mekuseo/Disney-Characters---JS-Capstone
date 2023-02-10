@@ -86,4 +86,4 @@ const popup = async () => {
   });
 };
 
-export default { popup };
+export { popup };
