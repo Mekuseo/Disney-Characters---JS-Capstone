@@ -3,11 +3,10 @@ const getData = async () => {
   const data = await response.json();
   return data.data;
 };
-
 const getClicks = async () => {
-  const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/UfLyVv1lq0qsaVGik4HQ/likes');
+  const response = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/nkjqDKDvMMwAFsU6RQcX/likes');
   const data = await response.json();
   return data;
 };
 
-export { getData, getClicks };
+export { getData, getClicks};

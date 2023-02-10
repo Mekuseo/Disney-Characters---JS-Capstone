@@ -6,6 +6,7 @@ import { getData, getClicks } from './api.js';
 const apiDisplay = document.querySelector('.api-display');
 
 const createCard = async () => {
+  let clicks = await getClicks();
   const images = await getData();
   images.forEach((image, index) => {
     const card = document.createElement('div');
@@ -16,7 +17,7 @@ const createCard = async () => {
         <h2>${image.name}</h2>
         <i class="fa-solid fa-heart heart" data-id="${index}"></i>
       </div>
-      <p class='likes-count'></p>
+      <p class='likes-count'>${clicks[index].likes} Likes</p>
       <button class='btn' data-id="${index}">Comments</button>
       <button>Reservations</button>
       `;
@@ -25,28 +26,27 @@ const createCard = async () => {
 
   const likeButton = document.querySelectorAll('.heart');
 
-  likeButton.forEach((e) => {
+  likeButton.forEach((e, index) => {
     e.addEventListener('click', async () => {
       e.classList.add('active');
       await fetch(
-        'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/UfLyVv1lq0qsaVGik4HQ/likes', {
+        'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/nkjqDKDvMMwAFsU6RQcX/likes', {
           method: 'POST',
           body: JSON.stringify({
-            item_id: `item${e.getAttribute('data-id')}`,
+            item_id: `item${index}`,
           }),
           headers: {
             'Content-type': 'application/json; charset=UTF-8',
           },
         },
       );
-      const clicks = await getClicks();
+      clicks = await getClicks();
       const updatedLikeCount = document.querySelectorAll('.likes-count');
-      updatedLikeCount[e.getAttribute('data-id')].innerHTML = `${clicks[e.getAttribute('data-id')].likes} Likes`;
+      updatedLikeCount[index].innerHTML = `${clicks[index].likes} Likes`;
     });
   });
   return document.querySelectorAll('.btn');
 };
-
 createCard();
 popup();
 

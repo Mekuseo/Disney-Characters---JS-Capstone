@@ -158,6 +158,7 @@ nav {
 .likes-count {
   text-align: right;
   margin: -2rem 0 2rem;
+  font-size: 2.5rem;
 }
 
 .image-name i {
@@ -223,11 +224,6 @@ button {
 
   .image-name i {
     font-size: 40px;
-  }
-
-  .likes-count {
-    font-size: 2rem;
-    margin: -4rem 0 7rem 0;
   }
 
   .fa-bars {
