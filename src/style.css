@@ -21,16 +21,6 @@ body {
   display: none;
 }
 
-.container {
-  background-color: rgb(0, 0, 0, 0.6);
-  backdrop-filter: blur(8px);
-  position: fixed;
-  overflow: auto;
-  max-height: 100vh;
-  color: white;
-  z-index: 67;
-}
-
 .char__img {
   width: 40rem;
   height: 40rem;
@@ -102,7 +92,7 @@ nav {
   display: flex;
   flex-direction: column;
   border: 1px solid gold;
-  border-radius: 4ox;
+  border-radius: 4px;
 }
 
 .menu li {
