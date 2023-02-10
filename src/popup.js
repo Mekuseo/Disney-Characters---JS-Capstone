@@ -1,6 +1,6 @@
 import { getData } from './api.js';
 // eslint-disable-next-line import/no-cycle
-import { createCard } from './index.js';
+import createCard from './index.js';
 
 const startPosition = document.querySelector('#body');
 const popup = async () => {
@@ -86,5 +86,4 @@ const popup = async () => {
   });
 };
 
-// eslint-disable-next-line import/prefer-default-export
-export { popup };
+export default popup;

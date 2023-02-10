@@ -1,8 +1,8 @@
 import './style.css';
 // eslint-disable-next-line import/no-cycle, import/named
-import { popup } from './popup.js';
+import popup from './popup.js';
 import { getData, getClicks } from './api.js';
-import { itemTotal } from './itemsTotal.js';
+import itemTotal from './itemsTotal.js';
 
 const apiDisplay = document.querySelector('.api-display');
 
@@ -48,9 +48,7 @@ const createCard = async () => {
   });
   return document.querySelectorAll('.btn');
 };
-createCard();
+
 popup();
 itemTotal();
-
-// eslint-disable-next-line import/prefer-default-export
-export { createCard };
+export default createCard;

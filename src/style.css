@@ -15,6 +15,10 @@ body {
   color: white;
   z-index: 67;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hide-container {
@@ -125,6 +129,10 @@ nav {
   display: flex;
   justify-content: space-evenly;
   gap: 3rem;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -199,23 +207,6 @@ button {
   margin: 1rem;
 }
 
-.title {
-  font-size: 4rem;
-  margin: 1rem;
-  text-align: center;
-}
-
-.items {
-  margin: 1rem;
-  font-size: 3rem;
-  font-weight: 600;
-  display: block;
-  text-align: center;
-  background-color: black;
-  color: white;
-  padding: 1rem;
-}
-
 @media only screen and (max-width: 720px) {
   nav > * {
     padding: 0 2rem;
@@ -254,6 +245,11 @@ footer {
   color: white;
   text-align: center;
   font-size: 2rem;
+}
+
+.heading {
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 450px) {
