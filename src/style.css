@@ -127,7 +127,6 @@ nav {
 
 .box2 {
   display: flex;
-  justify-content: space-evenly;
   gap: 3rem;
   width: 50%;
   flex-direction: column;
