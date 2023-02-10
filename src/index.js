@@ -8,6 +8,7 @@ const apiDisplay = document.querySelector('.api-display');
 
 const createCard = async () => {
   const images = await getData();
+  const clicks = await getClicks();
   images.forEach((image, index) => {
     const card = document.createElement('div');
     card.classList.add('card');
@@ -17,7 +18,7 @@ const createCard = async () => {
         <h2>${image.name}</h2>
         <i class="fa-solid fa-heart heart" data-id="${index}"></i>
       </div>
-      <p class='likes-count'></p>
+      <p class='likes-count'>${clicks[index].likes} likes</p>
       <button class='btn' data-id="${index}">Comments</button>
       `;
     apiDisplay.appendChild(card);
@@ -39,7 +40,6 @@ const createCard = async () => {
           },
         },
       );
-      const clicks = await getClicks();
       const updatedLikeCount = document.querySelectorAll('.likes-count');
       updatedLikeCount[e.getAttribute('data-id')].innerHTML = `${clicks[e.getAttribute('data-id')].likes} Likes`;
     });
