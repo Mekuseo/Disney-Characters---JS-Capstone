@@ -3,20 +3,21 @@ html {
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.container{
-  background-color: rgb(0, 0, 0, .6);
+.container {
+  background-color: rgb(0, 0, 0, 0.6);
   backdrop-filter: blur(8px);
   position: fixed;
   overflow: auto;
   max-height: 100vh;
   color: white;
   z-index: 67;
+  width: 100%;
 }
 
-.hide-container{
+.hide-container {
   display: none;
 }
 
@@ -100,6 +101,8 @@ nav {
 .comments__box {
   display: flex;
   flex-direction: column;
+  border: 1px solid gold;
+  border-radius: 4ox;
 }
 
 .menu li {
@@ -185,14 +188,14 @@ button {
   margin: 0 3rem 3rem 3rem;
 }
 
-.cross{
+.cross {
   font-size: 3rem;
   position: fixed;
   top: 5px;
   right: 5px;
 }
 
-.comment__list{
+.comment__list {
   display: flex;
   gap: 2rem;
   font-size: 1.8rem;
@@ -200,7 +203,7 @@ button {
   margin: 1rem;
 }
 
-.counter{
+.counter {
   font-size: 2rem;
   margin: 1rem;
 }
@@ -240,6 +243,14 @@ button {
   .fa-bars {
     display: block;
   }
+}
+
+footer {
+  padding: 2rem;
+  background-color: #212121;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
 }
 
 @media only screen and (max-width: 450px) {
